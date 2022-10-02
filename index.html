@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookself</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader">
+        <p>Loading...</p>
+    </div>
+    <header>
+        <h1>Bookself App</h1>
+        <p class="powered">powered by Local Storage</p>
+    </header>
+    <main>
+        <aside>
+            <form action="" id="buatBuku">
+                <div class="input">
+                    <p>Judul</p>
+                    <input type="text" id="judul">
+                </div>
+                <div class="input">
+                    <p>Penulis</p>
+                    <input type="text" id="penulis">
+                </div>
+                <div class="input">
+                    <p>Tahun</p>
+                    <input type="number" id="tahun">
+                </div>
+                <div class="input input-inline">
+                    <label for="isComplete">Selesai dibaca </label>
+                    <input id="isComplete" type="checkbox">
+                </div>
+                <button type="submit">Tambah</button>
+            </form>
+            <div id="searchBar">
+                <p>Pencarian</p>
+                <div class="search-input">
+                    <input type="text" id="search-key"><button id="search">cari</button>
+                </div>
+                <div id="result"></div>
+            </div>
+        </aside>
+        <div class="container">
+            <div class="bookSelf">
+                <p>Belum selesai dibaca</p>
+                <div id="belum"></div>
+            </div>
+            <div class="bookSelf">
+                <p>Sudah selesai dibaca</p>
+                <div id="sudah"></div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
